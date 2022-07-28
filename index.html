@@ -60,7 +60,7 @@
         <!-- carousel section start -->
 
         <section>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner container">
                     <div class="carousel-item active bg-dark">
                         <img src="images/cover/cover-1.png" class="d-block w-100" style="opacity: .5;" alt="...">
@@ -125,15 +125,20 @@
 
     </header>
 
-    <main class="mt-5">
-        <section class="container">
+    <main class="container pt-5">
+
+        <!-- courses section start -->
+
+        <section class="mt-5">
             <div class="text-center">
-                <h1 class="name">Discover Our Popular Courses</h1>
-            <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-            </p>
+                <h1 class="name d-none d-lg-block">Discover Our Popular <br> Courses</h1>
+                <h1 class="name d-block d-md-block d-lg-none">Discover Our Popular Courses</h1>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                </p>
             </div>
-            <div class="row mt-5 gy-4 gx-5">
+            <div class="row mt-1 gy-4 gx-5">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="row align-items-center border rounded-2">
                         <div class="col-lg-5 col-md-4 col-sm-12">
@@ -226,11 +231,126 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center my-4">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary d-lg-none d-md-block d-sm-block">
                     View All
+                </button>
+                <button class="btn btn-primary d-none d-lg-block">
+                    See More Courses
                 </button>
             </div>
         </section>
+
+        <!-- courses section end -->
+
+        <!-- blog section start -->
+
+        <section class="pt-5 mt-5">
+            <div class="card h-100 mb-3">
+                <div class="row g-0 d-flex align-items-center">
+                    <div class="col-md-4">
+                        <img src="images/working.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div>
+                                <h2 class="card-title fw-bolder">Explore The elearning Institute</h2>
+                                <p class="card-text">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure.
+                                    <br>
+                                    <br>
+                                    Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators
+                                    on
+                                    the Internet tend to repeat predefined.
+                                </p>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-lg-4 col-6">
+                                    <h3 class="fw-bolder">3.2K+</h3>
+                                    <p>
+                                        Courses
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <h3 class="fw-bolder">600+</h3>
+                                    <p>Expert Members</p>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <h3 class="fw-bolder">1K+</h3>
+                                    <p>Rating & Review</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog section end -->
+
+        <!-- modal section start -->
+
+        <section class="mt-5">
+            <div class="card mb-3 bg-info p-5">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-12 text-white">
+                        <h2 class="fw-bolder">Ready to join?</h2>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card-body d-flex justify-content-center align-items-center my-4">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Register Now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fw-bolder" id="staticBackdropLabel ">Registration Form</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <p>
+                                                    Name :  <input type="text" value="" id="name" required>
+                                                </p>
+                                                <p>
+                                                    E-mail : <input type="email" value="" id="email" required>
+                                                </p>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal section end -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
