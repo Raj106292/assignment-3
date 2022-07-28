@@ -9,3 +9,6 @@ body{
 .name{
     font-weight: 600;
 }
+.fa-star{
+    color: gold;
+}
