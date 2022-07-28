@@ -12,3 +12,7 @@ body{
 .fa-star{
     color: gold;
 }
+.social-media a{
+    text-decoration: none;
+    color: white;
+}
